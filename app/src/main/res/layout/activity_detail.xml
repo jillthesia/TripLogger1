@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail">
+
+    <TextView
+        android:id="@+id/detailsTitle"
+        android:text="Trip Title"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#ff84786a"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/detailsDestination"
+        android:layout_alignEnd="@+id/detailsDestination" />
+
+    <TextView
+        android:id="@+id/detailsTrip"
+        android:text="My Trip Details"
+        android:layout_below="@id/detailsTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#c3767132"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/detailsDestination"
+        android:text="Destination"
+        android:layout_below="@id/detailsTrip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="#c3767132"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/detailsTextDate"
+        android:textStyle="italic"
+        android:layout_below="@id/detailsTrip"
+        android:text="Date trip entered"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailsTextDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#f3d4d4"
+        android:textStyle="bold"
+        android:text="Delete"
+        android:visibility="visible" />
+
+</RelativeLayout>
